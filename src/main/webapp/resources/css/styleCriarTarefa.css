@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form-container {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.ui-panel .ui-panel-content {
+    padding: 2rem !important;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.textarea-row {
+    align-items: start;
+}
+
+.fixed-select {
+    width: 120px !important;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.button-group .ui-button {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    min-width: 120px;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}

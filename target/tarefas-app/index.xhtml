@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Gerenciador de Tarefas</title>
+    <h:outputStylesheet library="css" name="styleIndex.css"/>
+</h:head>
+<h:body>
+    <div class="menu-container">
+        <h1>Gerenciador de Tarefas</h1>
+        <div class="button-group">
+            <h:form> <p:commandButton value="Criar Tarefa" action="#{tarefaController.prepararCriacao}" styleClass="ui-button ui-button-primary"/>
+            </h:form>
+            <p:button value="Listar Tarefas" outcome="listarTarefas.xhtml" styleClass="ui-button ui-button-secondary"/>
+        </div>
+    </div>
+</h:body>
+</html>
